@@ -1,0 +1,8 @@
+.title__informacion{
+    @extend .title__galeria;
+        
+    p:nth-child(even){
+        background-color:$color-rgba-grey;
+        color:$color-terciario;
+    }
+}

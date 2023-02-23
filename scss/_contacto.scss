@@ -1,0 +1,174 @@
+.contactanos{
+    img{
+        display: block;
+        margin: auto;
+        width:$max;
+        border-radius:$medida-xxp + $medida-ep;
+        max-width:$max;
+        max-height: 500px;
+
+        @media (min-width:$desktopXG){
+            width:1585px;
+        }
+    }
+    
+    h1{
+        padding-top:$medida-xl;
+        font-size:$font-size-md;
+        text-align: center;
+        margin-bottom: $min;
+        color: $color-primario;
+
+        @media (min-width:$tablet){
+            font-size: $font-size-md;
+        }
+        
+        @media (min-width:$desktop){
+            font-size:$font-size-xl;
+        }
+    }
+
+    h2{
+        text-align: center;
+        background:$color-rgba-black;
+        font-size: $font-size-sm + .4rem;
+        padding:$medida-ep;
+
+        @media (min-width:$tablet){
+            font-size:$font-size-sml;
+        }
+    }
+    h3{
+        text-align: center;
+        background:$color-rgba-black;
+        padding: $medida-xxp;
+        font-size:$font-size-sm;
+
+        @media (min-width:$tablet){
+            font-size:$font-size-sm + $font-size-ep;
+        }
+    }
+}
+
+.accordion{
+    .accordion-button{
+        background: $color-enlaces;
+        color: $color-terciario;
+        font-size: 1.3rem;
+
+        &:hover{
+            z-index:$min;
+        }
+    }
+    .accordion-body{
+        h4{
+            color:$color-terciario;
+            font-size: 1.1rem;
+            overflow: hidden;
+            padding: .3rem;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            @media (min-width:$desktop){
+                font-size:$font-size-sml;
+            }
+        }
+        p{
+            color:$color-encabezado;
+            background: $color-rgba-grey;
+            padding: .4rem;
+
+            @media (min-width:$desktop){
+                font-size: 1.3rem;
+            }
+        }
+    } 
+}
+
+.formulario{
+        max-width:$max;
+        width:$max - 12%;
+        text-align: center;
+        margin:$medida-xl auto;
+        border: solid 6px $color-terciario;
+        background: $color-enlaces;
+        border-radius:$medida-ep;
+        
+
+        @media (min-width:$desktop){
+            width:900px;
+            font-size: $font-size-md;
+        }
+
+    h2{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size:1.9rem;
+        padding:$medida-epl;
+        color:$color-primario;
+        display:inline-block;
+        border: solid 3px rgb(146, 127, 18);
+        margin-top: $font-size-sml;
+        background: $color-terciario;
+        border-radius:$medida-ep + $medida-xxp;
+
+
+        @media (min-width:$tablet){
+            font-size:$font-size-md;
+        }
+
+        @media (min-width:$tabletXG){
+            font-size:$font-size-sm + $font-size-md;
+        }
+    }
+
+    label{
+        color: $color-terciario;
+        font-size: $font-size-sm;
+        margin: $font-size-sm;
+        text-decoration: underline;
+
+        @media (min-width:$tablet){
+            margin:$font-size-md;
+            font-size: $font-size-sm + $font-size-ep;
+        }
+    }
+
+    input ,textarea{
+        background:$color-white;
+        color:$color-terciario;
+        width:50%;
+        border-radius:$medida-xxp;
+
+        @media (min-width:$tablet){
+            width: 40%;
+        }
+    }
+    .formulario__correo ,.formulario__nombre ,.formulario__mensaje{
+        font-size:1.2rem;
+        margin-top:$medida-epl;
+        padding: auto;
+
+        @media (min-width:$tabletXG){
+            font-size: 1.3rem;
+        }
+    }
+    #Enviar{
+        background:$color-terciario;
+        color:$color-white;
+        font-size:$font-size-sm;
+        width: auto;
+        border-color:$color-white;
+
+        @media (min-width:$desktop){
+            font-size:$font-size-sm+ $font-size-ep;
+            &:hover{
+                cursor: pointer;
+                font-weight: 700;
+                background:$color-grey;
+                transition: .5s;
+                width: 95px;
+                color:$color-terciario;
+                border-color: $color-terciario;
+            }
+        } 
+    }
+}

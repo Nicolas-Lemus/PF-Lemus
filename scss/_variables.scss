@@ -1,0 +1,62 @@
+/*Medidas para pantallas*/
+$tablet:576px;
+$tabletXG:768px;
+$desktop:992px;
+$desktopXG:1200px;
+
+/*Colores*/
+$color-primario:rgb(184, 165, 55);
+$color-terciario:rgb(0, 0, 0);
+$color-white: rgb(255, 255, 255);
+$color-encabezado:rgb(44, 44, 44);
+$color-hover:rgb(247, 243, 6);
+$color-grey:rgb(122, 118, 118);
+
+/*Colores rgba*/
+$color-rgba-grey:rgba(229, 223, 223, 0.405);
+$color-enlaces:rgba(229, 229, 203, 0.799);
+$color-secundario:rgba(135, 129, 108, 0.339);
+$color-rgba-black:rgba(5, 5, 5, 0.652);
+
+/*Medidas en px*/
+$medida-xxp:5px;
+$medida-ep:10px;
+$medida-epl:20px;
+$medida-sm:30px;
+$medida-md:50px;
+$medida-lg:80px;
+$medida-xl:130px;
+
+/*Medidas en rem*/
+$font-size-ep:0.5rem;
+$font-size-sm:1rem;
+$font-size-sml:2rem;
+$font-size-md:3rem;
+$font-size-lg:5rem;
+$font-size-xl:8rem;
+
+/*Medidas en %*/
+$max:100%;
+$min:0;
+
+/*Mixins*/
+
+/*Sin parametros*/
+@mixin dispay-justify-center{
+    display: flex;
+    justify-content: center;
+}
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Con parametros*/
+@mixin wid-hei($ancho ,$largo){
+    width: $ancho;
+    height: $largo;
+}
+@mixin mar-pad($margen ,$relleno){
+    margin: $margen;
+    padding: $relleno;
+}
