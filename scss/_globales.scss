@@ -69,25 +69,24 @@ header{
 }
 
 #footer ul li a.active ,#navbarNav ul li a.active{
-    color:$color-primario;
-    text-decoration:underline;
+        color:$color-primario;
+        text-decoration:underline;
 }
 
 .button__arriba{
     display: inline-block;
-    background:$color-encabezado;
+    background:$color-terciario;
     margin:$medida-md $medida-ep;
     
     @media (min-width:$desktop){
         &:hover{
             background: $color-grey;
-            color:$color-grey;
             font-weight:700;
         }
     }
 
     a{
-        color:$color-hover;
+        color:$color-white;
         font-size:$font-size-sm;
         text-decoration: none;
     }

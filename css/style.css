@@ -86,18 +86,17 @@ header #navbarNav a:hover, header #navbarNav a a:focus {
 
 .button__arriba {
   display: inline-block;
-  background: rgb(44, 44, 44);
+  background: rgb(0, 0, 0);
   margin: 50px 10px;
 }
 @media (min-width: 992px) {
   .button__arriba:hover {
     background: rgb(122, 118, 118);
-    color: rgb(122, 118, 118);
     font-weight: 700;
   }
 }
 .button__arriba a {
-  color: rgb(247, 243, 6);
+  color: rgb(255, 255, 255);
   font-size: 1rem;
   text-decoration: none;
 }
